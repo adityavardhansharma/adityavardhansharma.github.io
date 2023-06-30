@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><em>Fill the form for us to understand your preferences</em></p>
+    <form id="survey-form" >
+      <fieldset>
+        <label for="name" id="name-label"><b>Enter Your First Name:</b> <input id="name" name="name" type="text" placeholder="name" required /></label>
+  <label for="email" id="email-label"><b>Enter Your Email:</b> <input id="email" name="email" type="email" placeholder="email" required /></label>
+  <label for="number" id="number-label"><b>Input your age (years):</b> <input id="number" type="number" name="number" placeholder="number" min="18" max="100" /></label>
+  <label for="role"><b>What is your role</b>
+          <select id="dropdown" name="role">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+            <option value="3">Job</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+<label><b>Gender:</b></label>
+<label for="Gender"><input id="Gender" type="radio" value="red" name="Gender" class="inline" /> Male</label>
+        <label for="Gender"><input id="Gender" type="radio" value="blue" name="Gender" class="inline" /> Female</label>
+<br>
+<label><b>What is your area of interest</b></label>
+<br>
+<label><input class="inline" type="checkbox" value="a">HTML</label>
+<label><input class="inline" type="checkbox" value="b">CSS</label>
+<label><input class="inline" type="checkbox" value="c">Javascript</label>
+<label><input class="inline" type="checkbox" value="d">React</label>
+<label><input class="inline" type="checkbox" value="e">Python</label>
+<label><input class="inline" type="checkbox" value="f">Flutter</label>
+<label><input class="inline" type="checkbox" value="g">C++</label>
+<label><input class="inline" type="checkbox" value="h">C</label> 
+<br>
+<label for="v"><b>What Motivated You To Use FreeCodeCamp over other websites:</b>
+          <textarea id="v" name="v" rows="3" cols="50" placeholder="Your Feedback is really helpfull..."></textarea>
+        </label>
+</fieldset>
+<div class="ba">
+<button class="btn" id="submit" type="submit">Submit</button>
+</div>
+</form>
+
+</body>
+</html>
